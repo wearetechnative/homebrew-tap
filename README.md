@@ -5,6 +5,12 @@ Homebrew tap for [wearetechnative](https://github.com/wearetechnative) tools.
 ## Install
 
 ```sh
+brew install wearetechnative/tap/bmc
+```
+
+Or tap once and install by name:
+
+```sh
 brew tap wearetechnative/tap
 brew install bmc
 ```
