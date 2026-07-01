@@ -5,21 +5,21 @@
 class Bmc < Formula
   desc "Bill McCloud's AWS toolbox — profile selection, EC2/ECS operations, console access"
   homepage "https://github.com/wearetechnative/bmc"
-  version "0.6.0"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wearetechnative/bmc/releases/download/v0.6.0/bmc_0.6.0_darwin_amd64.tar.gz"
-      sha256 "4ee3b0faac5208e044b6fa6da075ec7b985035cb75899d910a59aa42a5e79ec5"
+      url "https://github.com/wearetechnative/bmc/releases/download/v0.7.0/bmc_0.7.0_darwin_amd64.tar.gz"
+      sha256 "6346eb70dea5c2b7dc78b6deffaed8a1a18ccde1802ed4f2f7e134059f17015a"
 
       define_method(:install) do
         bin.install "bmc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wearetechnative/bmc/releases/download/v0.6.0/bmc_0.6.0_darwin_arm64.tar.gz"
-      sha256 "665939cfd15899c9323695853e070f9b615c8700e5686be3b2a1369646f5fa89"
+      url "https://github.com/wearetechnative/bmc/releases/download/v0.7.0/bmc_0.7.0_darwin_arm64.tar.gz"
+      sha256 "deffab967690adfc2db6cf8b58b3660a20b5bdb7c90577028d986c4cfdbd8fb3"
 
       define_method(:install) do
         bin.install "bmc"
@@ -29,15 +29,15 @@ class Bmc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wearetechnative/bmc/releases/download/v0.6.0/bmc_0.6.0_linux_amd64.tar.gz"
-      sha256 "2bdc833d31e8f95fe957ed49810b0ae2701b42cec00e0f72e6a7d86da746a225"
+      url "https://github.com/wearetechnative/bmc/releases/download/v0.7.0/bmc_0.7.0_linux_amd64.tar.gz"
+      sha256 "523b8e5bcdfc1999d868d49f55e2daf1291bfbd5db96239e5652b9e7476600f5"
       define_method(:install) do
         bin.install "bmc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wearetechnative/bmc/releases/download/v0.6.0/bmc_0.6.0_linux_arm64.tar.gz"
-      sha256 "5dbcd06fb97ec3240eadd2cdd9ebddcc45448512533af4f17ab06307e08ca833"
+      url "https://github.com/wearetechnative/bmc/releases/download/v0.7.0/bmc_0.7.0_linux_arm64.tar.gz"
+      sha256 "b477899de0143fa16c96b7054d31e493c0776332772fbff973bfc4aedc3c1bb6"
       define_method(:install) do
         bin.install "bmc"
       end
